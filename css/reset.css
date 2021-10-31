@@ -2,6 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 *{
     box-sizing: border-box;
     font-family: serif;
@@ -24,7 +26,7 @@
       border: 0;
       font-size: 100%;
       /* ------------------------------------- */
-      font-family: 'Noto Sans JP', sans-serif;
+      font-family: 'Poppins', sans-serif;
       /* ------------------------------------- */
   
       vertical-align: baseline;
@@ -52,3 +54,9 @@
       border-collapse: collapse;
       border-spacing: 0;
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  

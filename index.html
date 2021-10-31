@@ -22,37 +22,99 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- Google Font API ...................................................................... -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
 
     <!-- PAGE HEADER ========================================================================================== -->
-    <header class="page-header">
+    <header class="page-header sticky">
+        <ul class="nav">
+            <li class="nav__link"><a href="#" class="nav__link-anchor">MEN</a></li>
+            <li class="nav__link"><a href="#" class="nav__link-anchor">WOMEN</a></li>
+            <li class="nav__link"><a href="#" class="nav__link-anchor">NEW ARIVALS</a></li>
+        </ul>
+        
         <div class="logo">
-            <img class="logo__img" src="./img/logo.png" alt="logo of company">
+            <a href="https://www.allbirds.com/">
+                <img class="logo__img" src="/img/allbirds-logo.svg" alt="logo of company">
+            </a>
+            
         </div>
 
         <ul class="nav">
-            <li class="nav__link"><a href="#" class="nav__link-anchor">Menu</a></li>
-            <li class="nav__link"><a href="#" class="nav__link-anchor">About Us</a></li>
-            <li class="nav__link"><a href="#" class="nav__link-anchor">Home Page</a></li>
-            <li class="nav__link"><a href="#" class="nav__link-anchor">Q & A</a></li>
-            <li class="nav__link"><a href="#" class="nav__link-anchor">Socials</a></li>
-
+            <li class="nav__link"><a href="#" class="nav__link-anchor">SUSTAINABILITY</a></li>
+            <li class="nav__link"><a href="#" class="nav__link-anchor">STORES</a></li>
         </ul>
     </header>
 
     <!-- HERO SECTION ========================================================================================== -->
-    
-   
+
+    <section class="hero__section section">
+        <div class="hero__wrapper">
+
+            <img src="/img/runner-swt-red.png" alt="#" class="image hero__image">
+            <!-- https://i.postimg.cc/KjxGyqJ4/allbirds-content-image-1.jpg -->
+            <div class="hero__content">
+                <h1 class="hero__title">Trail Runner SWT</h1>
+                <p class="hero__hook">Durable. Comfortable. Ready to get <span class="underline">Dirty</span></p>
+                <p class="hero__info"> The sneaker, comfort, and sustainability you love.
+                    New ripstop fabric, grippy treads, and stabilizing support to take on any adventure.</p>
+
+                <div class="hero__buttons">
+                    <a href="https://www.allbirds.com/products/mens-trail-runners-swt-natural-white" class="button">
+                        <span class="button-text">Shop Men</span>
+                    </a>
+
+                    <a href="https://www.allbirds.com/products/womens-trail-runners-swt-natural-white" class="button">
+                        <span class="button-text">Shop Women</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <!-- BENEFIT SECTION W/CTA ========================================================================================== -->
 
+    <section class="section">
+        <div class="benefit__wrapper benefit-reverse__wrapper">
+            <img src="/img/trailrunner-img.png" class="benefit__image">
+            <div class="benefit__content benefit-reverse__content">
+                <h1 class="benefit__title">A Technical Trail Shoe — Made From Nature, For Nature</h1>
+                <p class="benefit__info">Our first-ever running shoe designed for the trails is sustainably-engineered
+                    and intentionally designed for durability, comfort, and performance..</p>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="benefit__wrapper ">
+            <img src="img/easier-planet-img.png" class="benefit__image" id="benefit__image-2">
+            <div class="benefit__content">
+                <h1 class="benefit__title">
+                    Easier On The Planet</h1>
+                <p class="benefit__info">What do you get when you combine the cushion of SweetFoam®, the comfort of
+                    wool, and the breathability of eucalyptus tree fiber? The Trail Runner SWT — or "Sugar, Wool, Tree",
+                    featuring a eucalyptus tree fiber and wool blend upper, a SweetFoam® sugarcane midsole, and a
+                    natural rubber outsole, made from nature for nature.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="benefit__wrapper benefit-reverse__wrapper">
+            <img src="/img/tough-shoe-img.png" class="benefit__image">
+            <div class="benefit__content benefit-reverse__content">
+                <h1 class="benefit__title">Tough On The Trails</h1>
+                <p class="benefit__info">Take on the trails thanks to a breathable one-piece upper featuring durable
+                    ripstop protection, plus rugged, all-condition traction, stabilizing midsole support, and a
+                    sock-like collar that blocks debris.</p>
+            </div>
+        </div>
+    </section>
     <!-- FEATURES SECTION W/CTA ========================================================================================== -->
 
     <!-- REVIEWS SECTION W/CTA ========================================================================================== -->
