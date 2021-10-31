@@ -27,6 +27,9 @@
 .underline {
   text-decoration: underline;
 }
+
+/* GLOBAL CONPONENTS CSS ========================================================================================== */
+
 .button {
   display: inline-block;
   width: 300px;
@@ -40,7 +43,7 @@
   color: var(--white);
 }
 
-
+/* GLOBAL SECTIONS CSS ========================================================================================== */
 .section {
   /* padding: 0; */
   padding: 0 4%;
@@ -67,12 +70,12 @@ a,
 .page-header {
   display: flex;
   flex-flow: row wrap;
-  
+
   justify-content: space-between;
+  padding: 0.8rem 4%;
+
   background-color: var(--white);
   color: #000000;
-  padding: .8rem 4%;
-
   box-shadow: var(--nav-box-shadow);
 }
 
@@ -150,7 +153,6 @@ a,
 
 /* MEDIA QUERIES ------------------------------------- */
 @media (max-width: 1400px) {
-  /*  OUTER BLOCK ------------------------------------- */
   .hero__image {
     width: 50%;
   }
@@ -189,7 +191,6 @@ a,
   .hero__content {
     width: 100%;
     padding: 2rem 4rem;
-
   }
 
   .hero__info {
@@ -198,10 +199,8 @@ a,
 }
 
 @media (max-width: 780px) {
-
   .hero__content {
     padding: 2rem;
-
   }
   .hero__title {
     font-size: 2.3rem;
@@ -216,7 +215,6 @@ a,
   .hero__image {
     width: 320px;
     height: auto;
-
   }
   .hero__title {
     font-size: 2.2rem;
@@ -232,7 +230,7 @@ a,
   display: flex;
   flex-flow: row nowrap;
   background-color: var(--benefit-section-bg);
-
+  color: #000000;
   padding: 5% 10%;
 }
 
@@ -248,7 +246,6 @@ a,
 
 .benefit__content {
   width: 50%;
-  /* background-color: coral; */
 
   padding: 0 1rem 0 4rem;
   display: flex;
@@ -259,8 +256,6 @@ a,
 .benefit-reverse__content {
   padding: 0 2rem 0 0;
 }
-
-/* INNER BLOCK ------------------------------------- */
 
 .benefit__title {
   font-size: 2.2rem;
@@ -330,10 +325,10 @@ a,
     display: flex;
     flex-flow: column nowrap;
     padding: 3rem 6%;
-
   }
 
-  .benefit__image, .benefit__content {
+  .benefit__image,
+  .benefit__content {
     width: 100%;
   }
 
@@ -350,11 +345,75 @@ a,
     /* background-color: coral; */
     padding: 0;
   }
-
 }
 
 @media (max-width: 600px) {
   .benefit__info {
-    font-size: .9rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* FEATURE SECTION ========================================================================================== */
+.feature__wrapper {
+  padding: 5% 10%;
+  background-color: #cf9e51;
+}
+
+.feature__title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+
+  padding-bottom: 4rem;
+}
+.feature-content {
+  display: flex;
+  flex-flow: row wrap;
+  color: #000000;
+}
+
+.feature-content__wrapper {
+  width: 25%;
+  text-align: center;
+  text-transform: uppercase;
+  /* border: #000000 1px solid; */
+}
+
+.feature-content__img {
+  width: 150px;
+  height: auto;
+}
+
+.feature-content__text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+@media (max-width: 1400px) {
+  .feature__wrapper {
+    padding: 5rem 1%;
+  }
+  .feature-content__text {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .feature-content {
+    display: flex;
+    flex-flow: row wrap;
+
+  }
+  .feature-content__wrapper {
+    width: 50%;
+  }
+}
+
+@media (max-width: 340px) {
+  .feature__wrapper {
+    padding: 5rem 0;
   }
 }
