@@ -16,8 +16,13 @@
     <meta property='og:description' content='Homepage Of Portfolio Site' />
     <meta property='og:url' content='https://www.oscarhviquez.com/' />
 
-    <!-- CSS File Paths ..................................................................... -->
+    <!-- OWL Carousel Styling API ...................................................................... -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
 
+    <!-- CSS File Paths ..................................................................... -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 
@@ -27,6 +32,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
+    <!-- ================= Font Awesome  =================-->
+    <script src="https://kit.fontawesome.com/51a8c67162.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -117,14 +124,12 @@
     </section>
 
     <!-- FEATURES SECTION W/CTA ========================================================================================== -->
-    
+
     <section class="feature section">
         <div class="feature__wrapper">
-
             <h1 class="feature__title">What we offer?</h1>
 
             <div class="feature-content">
-
                 <div class="feature-content__wrapper">
                     <img class="feature-content__img"
                         src="https://emailtuna.com/images/newsletter/caa/caac7fef668b5e9fad7d386f931fd79d.png" alt="#">
@@ -151,22 +156,126 @@
 
             </div>
 
-
+            <a href="https://www.allbirds.com/products/mens-trail-runners-swt-diablo#pdp-reviews-container" class="button section-button">
+                <span class="button-text">More info</span>
+            </a>
         </div>
     </section>
 
     <!-- REVIEWS SECTION W/CTA ========================================================================================== -->
 
     <section class="reviews section">
+        <div class="reviews__wrapper">
+            <!-- Start of Card ............................. -->
+            <div class="review-card">
+                <div class="card-user-review">
+                    <div class="card__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h1 class="card__title">Top Notch Trail shoe!</h1>
+                    <p class="card__quote">I've clocked over 100 miles on my trail shoes and they are holding up
+                        very
+                        well! The upper is breathable, but not so much that dust migtayes through. The outsole has
+                        great
+                        grip! My favorite part of the shoe is that it is machine washable and by comparison to my
+                        other
+                        trail shoes come out 1000% cleaner with basicay zero mud residue!!</p>
+                </div>
 
+                <div class="card-user-details">
+                    <div class="card-user-details__wrapper">
+                        <h1 class="card-user__name">Robert <i class="card__italics">Verified Buyer</i></h1>
+                        <p class="card-user__size"><b class="card__bold">Typical Size : </b>11</p>
+                        <p class="card-user__typical-width"><b class="card__bold">Typical Width :</b> Wide</p>
+                        <p class="card-user__overall-fit"> <b class="card__bold">Overall Fit :</b>Just Right</p>
+                        <p class="card-user__activity"><b class="card__bold">Activity :</b> Running </p>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- End of Card ............................. -->
+
+            <!-- Start of Card ............................. -->
+            <div class="review-card">
+                <div class="card-user-review">
+                    <div class="card__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h1 class="card__title">My Favorite Trail Runners Ever?</h1>
+                    <p class="card__quote">It’s been a while since I’ve had trail runners I’ve loved this much. I ran on
+                        Adidas/Salomon’s for years, but with the discontinuation of the Duramo TR and the Salomon
+                        Speedcross now feeling too narrow, I tried Hoka. Three pairs, and was only able to eek out 500
+                        miles out of all of them since they’d fall apart – the lower adhesive didn’t seem to hold up. I
+                        switched to Altra’s for the width. </p>
+                </div>
+
+                <div class="card-user-details">
+                    <div class="card-user-details__wrapper">
+                        <h1 class="card-user__name">Matt <i class="card__italics">Verified Buyer</i></h1>
+                        <p class="card-user__size"><b class="card__bold">Typical Size : </b>14</p>
+                        <p class="card-user__typical-width"><b class="card__bold">Typical Width :</b> Average</p>
+                        <p class="card-user__overall-fit"> <b class="card__bold">Overall Fit :</b>Just Right</p>
+                        <p class="card-user__activity"><b class="card__bold">Activity :</b> Running, Hiking </p>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- End of Card ............................. -->
+
+            <!-- Start of Card ............................. -->
+            <div class="review-card">
+                <div class="card-user-review">
+                    <div class="card__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h1 class="card__title">Great Shoe!</h1>
+                    <p class="card__quote">I really liked the Trail Runners SWT. I'm not sure I would do distance
+                        running in them, but they are great for short runs and for running around town. If you like the
+                        Wool Runners you'll REALLY like these.</p>
+                </div>
+
+                <div class="card-user-details">
+                    <div class="card-user-details__wrapper">
+                        <h1 class="card-user__name">Nathan <i class="card__italics">Verified Buyer</i></h1>
+                        <p class="card-user__size"><b class="card__bold">Typical Size : </b>14</p>
+                        <p class="card-user__typical-width"><b class="card__bold">Typical Width :</b> Average</p>
+                        <p class="card-user__overall-fit"> <b class="card__bold">Overall Fit :</b>Just Right</p>
+                        <p class="card-user__activity"><b class="card__bold">Activity :</b> Walking, Hiking, Around Town </p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- End of Card ............................. -->
+            
+            <a href="https://www.allbirds.com/products/mens-trail-runners-swt-diablo#pdp-reviews-container" class="button section-button">
+                <span class="button-text">See All Reviews</span>
+            </a>
+        </div>
     </section>
 
-    <!-- CALL TO ACTIONS SECTION ========================================================================================== -->
+    <!-- jQuery ..................................................................... -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- OTHER POPULAR SECTION ========================================================================================== -->
+    <!-- Owl Carousel ..................................................................... -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <!-- PAGE FOOTER ========================================================================================== -->
 
+    <!-- Carousel.JS..................................................................... -->
+    <script type="text/javascript" src="./js/carousel.js"></script>
 </body>
 
 </html>
