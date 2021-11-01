@@ -38,7 +38,7 @@
   font-size: 16px;
   letter-spacing: 1px;
   text-transform: uppercase;
-
+  text-align: center;
   border: #2b252b 2px solid;
   background-color: var(--button-bg);
   color: var(--white);
@@ -104,6 +104,12 @@ a,
 
 .nav__link {
   padding: 0 1rem;
+}
+
+@media (max-width: 780px) {
+  .nav__link {
+    display: none;
+  }
 }
 
 /* HERO SECTION ========================================================================================== */
@@ -375,7 +381,7 @@ a,
 
 .feature__title {
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 600;
 
   padding-bottom: 4rem;
@@ -431,7 +437,8 @@ a,
   }
 }
 
-/* ===================================================================  */
+/* REVIEWS SECTION ========================================================================================== */
+
 .reviews {
   width: 100%;
 }
@@ -441,6 +448,11 @@ a,
   background-color: #ffffff;
 }
 
+.reviews-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 3rem 0;
+}
 .review-card {
   width: 100%;
   display: flex;
@@ -449,10 +461,15 @@ a,
 
   padding: 2rem 0;
   height: 350px;
-  border-top: #cdcdcd solid 1px;
+  /* border-top: #cdcdcd solid 1px; */
   border-bottom: #cdcdcd solid 1px;
 
   line-height: 1.6;
+}
+
+.review-card-1 {
+  border-top: #cdcdcd solid 1px;
+  border-bottom: #cdcdcd solid 1px;
 }
 
 .card-user-review {
@@ -546,6 +563,84 @@ a,
   }
 }
 
+/* SHOP NOW SECTION W/CTA ========================================================================================== */
+
+.shop-cta-wrapper {
+  color: #000000;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.shop-cta-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.shop-cta-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+
+/* Footer ========================================================================================== */
+footer {
+  width: 100%;
+  background-color: #212a2f;
+  color: #ffffff;
+}
+
+.footer__wrapper {
+  /* padding: 4rem 0; */
+  padding: 5% 10%;
+  color: var(--white);
+}
+
+.footer-row {
+  display: flex;
+  flex-flow: row nowrap;
+
+}
+
+.footer-col {
+  width: 33%;
+
+}
+
+.footer-col-title {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  padding: 3rem 0 1rem 0;
+}
+
+.footer-col-list {
+  line-height: 1.6;
+}
+
+.footer-col-links {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.footer-col-links {
+  color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+  .footer-row {
+    display: flex;
+    flex-flow: column nowrap;
+    
+    text-align: center;
+  }
+
+  .footer-col {
+    width: 100%;
+  
+  }
+}
 /* 
 .owl-carousel {
   background-color: rgb(168, 248, 222);
