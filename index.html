@@ -9,12 +9,19 @@
 
     <!-- Meta Data For SEO & Previews of link ..................................................................... -->
 
-    <meta property="og:image" content="https://i.postimg.cc/NjTR8PWC/screenshot-homepage-site.png">
+    <meta property="og:image"
+        content="https://i.postimg.cc/MZ0JcLMJ/screenshot-homepage-allbird-product-Landing-Page.png">
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="627" />
-    <meta property="og:title" content="Oscar H Viquez Portfolio" />
-    <meta property='og:description' content='Homepage Of Portfolio Site' />
-    <meta property='og:url' content='https://www.oscarhviquez.com/' />
+    <meta property="og:title" content="Allbird's Runner SWT Landing Page" />
+    <meta property='og:description' content='created by Oscar.H.V' />
+    <meta property='og:url' content='https://allbirds-runner-swt-landing-page.netlify.app/' />
+
+    <!-- Favicons ...................................................................... -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/allbirds-Landing-favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/allbirds-Landing-favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/allbirds-Landing-favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/allbirds-Landing-favicon/site.webmanifest">
 
     <!-- OWL Carousel Styling API ...................................................................... -->
     <link rel="stylesheet"
@@ -39,25 +46,47 @@
 <body>
 
     <!-- PAGE HEADER ========================================================================================== -->
-    <header class="page-header sticky">
-        <ul class="nav">
-            <li class="nav__link"><a href="#" class="nav__link-anchor">MEN</a></li>
-            <li class="nav__link"><a href="#" class="nav__link-anchor">WOMEN</a></li>
-            <li class="nav__link"><a href="#" class="nav__link-anchor">NEW ARRIVALS</a></li>
+    <header class="sticky">
+
+        <ul class="nav__links">
+            <li><a href="https://www.allbirds.com/collections/mens" class="nav__link">MEN</a>
+            </li>
+            <li><a href="https://www.allbirds.com/collections/womens" class="nav__link">WOMEN</a></li>
+            <li><a href="https://www.allbirds.com/collections/new-arrivals" class="nav__link">NEW ARRIVALS</a>
+            </li>
         </ul>
 
-        <div class="logo">
-            <a href="https://www.allbirds.com/">
-                <img class="logo__img" src="./img/allbirds-logo.svg" alt="logo of company">
+        <a href="#" class="logo__wrapper">
+            <img class="logo" src="./img/allbirds-logo.svg" alt="#" style=" width: 120px;">
+            <!-- <i class="fas fa-bars toggle active"></i>
+            <i class="fas fa-times toggle stop-active"></i> -->
+            <div class="cta-nav-button-mobile__wrapper">
+                <a href="https://www.allbirds.com/collections/trail-runners-swt" class="cta-nav-button cta-nav-button-mobile">
+                    Shop Now
+                </a>
+            </div>
+
+        </a>
+
+        <ul class="nav__links">
+            <li>
+                <a href="https://www.allbirds.com/pages/our-materials-wool" class="nav__link">
+                    SUSTAINABILITY
+                </a>
+            </li>
+            <li>
+                <a href="https://www.allbirds.com/pages/stores" class="nav__link">
+                    STORES
+                </a>
+            </li>
+            <a href="https://www.allbirds.com/collections/trail-runners-swt" class="cta-nav-button">
+                Shop Now
             </a>
-
-        </div>
-
-        <ul class="nav">
-            <li class="nav__link"><a href="#" class="nav__link-anchor">SUSTAINABILITY</a></li>
-            <li class="nav__link"><a href="#" class="nav__link-anchor">STORES</a></li>
         </ul>
+
+
     </header>
+
 
     <!-- HERO SECTION ========================================================================================== -->
 
@@ -272,13 +301,13 @@
 
     </section>
 
-    <!-- SHOP NOW SECTION W/CTA ========================================================================================== -->
-    <section class="shop-cta section">
-        <div class="shop-cta-wrapper">
-            <img class="shop-cta-img" src="./img/shop-now-cta-bg.png" alt="#">
-            <h1 class="shop-cta-title"> Have any more questions? </h1>
+    <!-- FAQ SECTION W/CTA ========================================================================================== -->
+    <section class="faq section">
+        <div class="faq__wrapper">
+            <img class="faq__img" src="./img/shop-now-cta-bg.png" alt="#">
+            <h1 class="faq__title"> Have any more questions? </h1>
 
-            <a href="#" class="button">
+            <a href="https://www.allbirds.com/pages/help" class="button">
                 <span class="button-text">Visit FAQ</span>
             </a>
         </div>
@@ -293,12 +322,18 @@
                 <div class="footer-col">
                     <h3 class="footer-col-title">HELP</h3>
                     <ul class="footer-col-list">
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">1-888-963-8944</a></li>
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">1-814-251-9966 (Text)</a> </li>
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">help@allbirds.com </a></li>
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">Returns/Exchanges </a></li>
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">FAQ/Contact Us </a></li>
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">Afterpay</a> </li>
+                        <li class="footer-col-item"><a href="tel:18889638944"
+                                class="footer-col-links">1-888-963-8944</a></li>
+                        <li class="footer-col-item"><a href="sms:18142519966" class="footer-col-links">1-814-251-9966
+                                (Text)</a> </li>
+                        <li class="footer-col-item"><a href="help@allbirds.com"
+                                class="footer-col-links">help@allbirds.com </a></li>
+                        <li class="footer-col-item"><a href="https://www.allbirds.com/pages/help"
+                                class="footer-col-links">Returns/Exchanges </a></li>
+                        <li class="footer-col-item"><a href="https://www.allbirds.com/pages/help"
+                                class="footer-col-links">FAQ/Contact Us </a></li>
+                        <li class="footer-col-item"><a href="https://www.allbirds.com/pages/afterpay"
+                                class="footer-col-links">Afterpay</a> </li>
 
                     </ul>
                 </div>
@@ -306,12 +341,18 @@
                 <div class="footer-col">
                     <h3 class="footer-col-title">SHOP</h3>
                     <ul class="footer-col-list">
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">Men's Shoes</a> </li>
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">Women's Shoes </a></li>
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">Men's Apparel </a></li>
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">Women's Apparel </a></li>
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">Socks </a></li>
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">Download the Allbirds App </a>
+                        <li class="footer-col-item"><a href="https://www.allbirds.com/collections/mens"
+                                class="footer-col-links">Men's Shoes</a> </li>
+                        <li class="footer-col-item"><a href="https://www.allbirds.com/collections/womens"
+                                class="footer-col-links">Women's Shoes </a></li>
+                        <li class="footer-col-item"><a href="https://www.allbirds.com/collections/mens-apparel"
+                                class="footer-col-links">Men's Apparel </a></li>
+                        <li class="footer-col-item"><a href="https://www.allbirds.com/collections/womens-apparel"
+                                class="footer-col-links">Women's Apparel </a></li>
+                        <li class="footer-col-item"><a href="https://www.allbirds.com/collections/trino-socks"
+                                class="footer-col-links">Socks </a></li>
+                        <li class="footer-col-item"><a href="https://allbirds.app.link/e/AweOhG1itbb"
+                                class="footer-col-links">Download the Allbirds App </a>
                         </li>
 
                     </ul>
@@ -320,17 +361,32 @@
                 <div class="footer-col">
                     <h3 class="footer-col-title">COMPANY</h3>
                     <ul class="footer-col-list">
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">Our Stores</a></li>
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">Our Story</a></li>
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">Our Materials</a></li>
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">Sustainability</a></li>
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">Partnerships</a></li>
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">Product Testing</a></li>
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">Affiliates</a></li>
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">Bulk Orders</a></li>
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">Careers</a></li>
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">Press</a></li>
-                        <li class="footer-col-item"><a href="#" class="footer-col-links">California Transparency Act</a>
+                        <li class="footer-col-item"><a href="https://www.allbirds.com/pages/stores"
+                                class="footer-col-links">Our Stores</a></li>
+                        <li class="footer-col-item"><a href="https://www.allbirds.com/pages/our-story"
+                                class="footer-col-links">Our Story</a></li>
+                        <li class="footer-col-item"><a href="https://www.allbirds.com/pages/our-materials-wool"
+                                class="footer-col-links">Our Materials</a></li>
+                        <li class="footer-col-item"><a href="https://www.allbirds.com/pages/sustainable-practices"
+                                class="footer-col-links">Sustainability</a></li>
+                        <li class="footer-col-item"><a
+                                href="https://ir.allbirds.com/?_gl=1*14n5sli*_ga*MTY1NzAwMDk3OS4xNjI5MTQzMTg3*_ga_KJL05B1DJZ*MTYzNTkxNDIwMC4yOS4xLjE2MzU5MTczMjIuMA.."
+                                class="footer-col-links">Investors</a></li>
+                        <li class="footer-col-item"><a href="https://www.allbirds.com/pages/partnerships"
+                                class="footer-col-links">Partnerships</a></li>
+                        <li class="footer-col-item"><a href="https://www.allbirds.com/pages/product-testing"
+                                class="footer-col-links">Product Testing</a></li>
+                        <li class="footer-col-item"><a href="https://www.allbirds.com/pages/affiliates"
+                                class="footer-col-links">Affiliates</a></li>
+                        <li class="footer-col-item"><a href="https://www.allbirds.com/pages/bulk-ordering"
+                                class="footer-col-links">Bulk Orders</a></li>
+                        <li class="footer-col-item"><a href="https://www.allbirds.com/pages/careers"
+                                class="footer-col-links">Careers</a></li>
+                        <li class="footer-col-item"><a href="https://www.allbirds.com/pages/press"
+                                class="footer-col-links">Press</a></li>
+                        <li class="footer-col-item"><a
+                                href="https://cdn.shopify.com/s/files/1/1104/4168/files/Allbirds_CATSA_Disclosure_FINAL.pdf?v=1606779259"
+                                class="footer-col-links">California Transparency Act</a>
                         </li>
                     </ul>
                 </div>
@@ -340,16 +396,25 @@
             <div class="footer-row">
                 <div class="footer-col">
                     <h3 class="footer-col-title"> FOLLOW THE FLOCK </h3>
-                    <p class="footer-description">Exclusive offers, a heads up on new things, and <br>
-                        sightings of Allbirds in the wild. Oh, we have cute <br>
+                    <p class="footer-description">Exclusive offers, a heads up on new things, and
+                        sightings of Allbirds in the wild. Oh, we have cute
                         sheep, too. #weareallbird
                     </p>
 
-                    <div class="footer-col-social-wrapper">
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-pinterest-p"></i>
+                    <div class="footer-social-wrapper">
+                        <a href="https://www.instagram.com/allbirds" class="footer-social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com/allbirds" class="footer-social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/weareallbirds" class="footer-social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="http://pinterest.com/weareallbirds" class="footer-social-link">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+
                     </div>
                 </div>
 
@@ -358,25 +423,26 @@
                 </div>
 
                 <div class="footer-col footer-col-flags">
-                    <a href="#">
+                    <a href="https://www.allbirds.com/">
                         <img class="footer-icon-flag" src="./img/footer/flag-us.svg" alt="#">
                     </a>
-                    <a href="#">
+                    <a href="https://www.allbirds.co.nz/?_ga=2.53724968.1427173410.1635871542-1657000979.1629143187">
                         <img class="footer-icon-flag" src="./img/footer/flag-nz.svg" alt="#">
                     </a>
-                    <a href="#">
+                    <a
+                        href="https://www.allbirds.com.au/?_ga=2.54640811.1427173410.1635871542-1657000979.1629143187&_gl=1*1q7y7hg*_ga*MTY1NzAwMDk3OS4xNjI5MTQzMTg3*_ga_KJL05B1DJZ*MTYzNTkxNDIwMC4yOS4xLjE2MzU5MTc0ODguMA..">
                         <img class="footer-icon-flag" src="./img/footer/flag-au.svg" alt="#">
                     </a>
-                    <a href="#">
+                    <a href="https://www.allbirds.ca/?_ga=2.54640811.1427173410.1635871542-1657000979.1629143187">
                         <img class="footer-icon-flag" src="./img/footer/flag-ca.svg" alt="#">
                     </a>
-                    <a href="#">
+                    <a href="https://www.allbirds.co.uk/?_ga=2.54640811.1427173410.1635871542-1657000979.1629143187">
                         <img class="footer-icon-flag" src="./img/footer/flag-uk.svg" alt="#">
                     </a>
-                    <a href="#">
+                    <a href="https://www.allbirds.cn/">
                         <img class="footer-icon-flag" src="./img/footer/flag-cn.svg" alt="#">
                     </a>
-                    <a href="#">
+                    <a href="https://www.allbirds.eu/?_ga=2.54640811.1427173410.1635871542-1657000979.1629143187">
                         <img class="footer-icon-flag" src="./img/footer/method-draw-image.svg" alt="#">
                     </a>
                     <!-- <a href="#" class="footer-icon-flag-custom">
@@ -388,13 +454,14 @@
                             src="./img/footer/flag_Korea_final_final.png" alt="#">
                     </a> -->
                 </div>
-
             </div>
 
-
             <div class="footer-row-center">
-                <p class="footer-copyright footer-description">
-                    © 2021 Allbirds, Inc. All Rights Reserved. Terms, Privacy & Accessibility
+                <p class="footer-copyright">
+                    © 2021 Allbirds, Inc. All Rights Reserved. <a
+                        href="https://www.allbirds.com/pages/allbirds-terms-of-use" class="underline">Terms,</a> <a
+                        href="https://www.allbirds.com/pages/privacy-policy" class="underline"> Privacy,</a> & <a
+                        href="https://www.allbirds.com/pages/accessibility" class="underline"> Accessibility</a>
                 </p>
             </div>
         </div>
